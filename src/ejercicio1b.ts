@@ -1,0 +1,12 @@
+console.log("Dirigirse de su domicilio al supermercado");
+console.log("Tomar bolsas reutilizables y subir al auto");
+console.log("Encender el auto");
+console.log("colocarse el cinturon de seguridad");
+console.log("avanzar dos cuadras por calle angela loig");
+console.log("seguir derecho por calle moyano");
+console.log("avanzar tres cuadras");
+console.log("doblar a la derecha en calle espora y avanzar tres cuadras");
+console.log("al llegar a la avenida san martin doblar a la izquierda");
+console.log("avanzar tres cuadras");
+console.log("estacionar sobre mano derecha");
+console.log("su destino 'supermercado' se encuentra a la izquierda");
