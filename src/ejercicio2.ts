@@ -1,5 +1,7 @@
 /*Ejercicio 2: 26/04/2022 
+
 Realizado por Dario Lopez - Comision A TDF - 27/04/2022
+
 Estructura de Control – Selección Simple
 Ejercicio – Determinar Medalla
 Desarrolle un algoritmo que, dada una posición en
@@ -11,7 +13,7 @@ caso que quede en otra posición se entrega
 certificado de participación
 */
 
-// Se ingresa la psosicion de llegada
+// Se ingresa la posicion de llegada
 let posicionLlegada: number = Number(prompt("Ingrese su posicion de llegada"));
 
 if (posicionLlegada === 1) {
@@ -28,3 +30,4 @@ if (posicionLlegada === 1) {
           } 
         } 
       }
+// End 
