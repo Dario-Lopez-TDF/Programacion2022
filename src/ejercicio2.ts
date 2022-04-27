@@ -1,16 +1,30 @@
-// Ejercicio autos de carrera..
-let tiempoPrimerVuelta: number = Number(prompt("ingrese el tiempo de la primer vuelta"));
-let tiempoSedundaVuelta: number = Number(prompt("ingrese el tiempo de la segunda vuelta"));
-let tiempoTercerVuelta: number = Number(prompt("ingrese el tiempo de la tercer vuelta"));
-let tiempoCuartaVuelta: number = Number(prompt("ingrese el tiempo de la cuarta vuelta"));
-// Aqui se ingresan los tiempos de las vueltas...
-let tiempoTotal: number = tiempoPrimerVuelta + tiempoSedundaVuelta + tiempoTercerVuelta + tiempoCuartaVuelta;
-// Suma de los tiempos de las vueltas
-let tiempoPromedioTotal: number = tiempoTotal / 4;
-// Promedio de tiempos de las vueltas
+/*Ejercicio 2: 26/04/2022 
+Realizado por Dario Lopez - Comision A TDF - 27/04/2022
+Estructura de Control – Selección Simple
+Ejercicio – Determinar Medalla
+Desarrolle un algoritmo que, dada una posición en
+una carrera se determine el tipo de medalla a
+entregar. Tenga en cuenta que para el primer puesto se
+entrega medalla de oro, segundo puesto medalla
+de plata y tercer puesto medalla de bronce. En
+caso que quede en otra posición se entrega
+certificado de participación
+*/
 
+// Se ingresa la psosicion de llegada
+let posicionLlegada: number = Number(prompt("Ingrese su posicion de llegada"));
 
-console.log("El tiempo total es: ", tiempoTotal, "segundos");
-console.log("El tiempo promedio de vuelta es: ", tiempoPromedioTotal, "segundos");
-
-//Realizado por Dario Lopez - Comision A TDF - 24/04/2022
+if (posicionLlegada === 1) {
+  console.log("Entregar Medalla de ORO");
+} else {
+    if (posicionLlegada === 2) { 
+      console.log("Entregar Medalla de PLATA");
+      } else {
+          if (posicionLlegada === 3) { 
+          console.log("Entregar Medalla de BRONCE");
+          } else {
+              if (posicionLlegada >=4 ) { 
+            console.log("Entregar mención de participación")
+          } 
+        } 
+      }

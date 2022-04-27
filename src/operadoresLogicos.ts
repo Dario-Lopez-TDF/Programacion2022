@@ -27,7 +27,7 @@ if (AB > 100 && AB % 2 === 0) {
 }
 
 ///////////////
-// Ejercicio Operadores lógicos || Disyuntivo
+// Ejercicio Operadores lógicos || Disyuncion; almenos una es verdadera
 
 let numeroA: number = Number(prompt("ingrese el numero A"));
 
