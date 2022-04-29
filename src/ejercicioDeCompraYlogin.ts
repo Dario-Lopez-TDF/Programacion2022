@@ -1,10 +1,10 @@
-/* Desarrolle un algoritmo que diga el precio de una compra 
+/*Desarrolle un algoritmo que diga el precio de una compra 
 La compra se compone del precio del producto y la cantidad
 Si el cliente gasta más de $1000 debemos aplicarle un descuento del 10%
-Estructura de Control – Selección Simple
-*/ 
+Estructura de Control – Selección Simple 
+*/
 
-/* Se ingresa el precio del producto por teclado
+//Se ingresa el precio del producto por teclado
 let precioInicialProducto: number = Number(prompt("ingrese el precio"));
 // Se ingresa la cantidad del producto por teclado
 let cantidad: number = Number(prompt("ingrese cantidad"));
@@ -23,9 +23,31 @@ if (precioTotal >= 1000) {
 } else {
   //.muestra el precio final del producto SIN descuento
   console.log("El monto final a pagar es: ", precioTotal);
-} /*
+}
 
-/*Ejercicio - Login
+// Revisar para acortar el codigo y la formula del descuento.
+let monto : number = dato1.value;
+let cantidad : number = dato2.value;
+let montoConDescuento : number = 0;
+let descuento : number = 0;
+let precioTotal : number = 0;
+precioTotal = monto * cantidad;
+if (precioTotal >= 1000) {
+descuento = (precioTotal *10)/100;
+montoConDescuento = precioTotal - descuento;
+console.log("Por gastar mas de 1000 tiene un 10% de descuento.");
+console.log("El monto a pagar es: " + montoConDescuento);
+} else {
+console.log("No tiene descuento. El monto a pagar es: " + precioTotal);
+}
+
+
+
+
+
+
+/*
+//Ejercicio - Login
 
 • Desarrolle un algoritmo que permita loguearse (registrarse)
 a un sistema, ingresando un nombre de usuario y la
@@ -36,7 +58,6 @@ formados sólo por letras.
 sean correctas, comparándolas con lo que es sistema tiene
 registrado para ese usuario. Tenga en cuenta que el sistema
 tiene registrado el usuario: Juan y la clave claveJuan
-*/
 
 let usuario : string = "Juan";
 let clave : string = "claveJuan";

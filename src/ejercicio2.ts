@@ -25,8 +25,7 @@ if (posicionLlegada === 1) {
           if (posicionLlegada === 3) { 
           console.log("Entregar Medalla de BRONCE");
           } else {
-              if (posicionLlegada >=4 ) { 
-            console.log("Entregar mención de participación")
+             console.log("Entregar mención de participación")
           } 
         } 
       }
