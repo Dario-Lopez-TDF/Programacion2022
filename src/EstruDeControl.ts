@@ -20,24 +20,14 @@ if (continuar === "y") {
 
 /////Multiplos de 2 y 3 (% 2 == 0  y % 3 == 0) El resto da 0...
 // Algoritmo múltiplo
-
+/*
 let indice: number;
 let cadena: string = "";
 for (let indice: number = 1; indice <= 100; indice++) {
   if (indice % 2 === 0 || indice % 3 === 0) {
     cadena = cadena + indice + "";
-    console.log(cadena);
   }
 }
-
-/*Algoritmo Múltiplos
-let indice : number;
-let cadena : string = "";
-for (let indice : number = 1 ; indice <= 100 ; indice++ ) {
-if (indice % 2 == 0 || indice % 3 == 0) {
-cadena = cadena + indice + " ";
-}
-}
 console.log(cadena);
+
 */
-//TAREA:  EJERCICIO ENTRGLABLE Y COMPARTIR LA DIRECCION DEL ARCHIVO DE GITHUB

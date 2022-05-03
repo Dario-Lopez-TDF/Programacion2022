@@ -21,16 +21,15 @@ let numeroA: number = Number(prompt("Ingrese primer número"));
 let numeroB: number = Number(prompt("Ingrese segundo número"));
 /*Se agrega una nueva "regla" por si se ingresa primero
 un numero mayor y luego un menor */
-let contador, suma: number; 
-contador = numeroA;
+let suma: number = 0;
+
 if (numeroA > numeroB) {
-  contador = numeroA; // si B > A intercambio el primero por el segundo.
+  contador = numeroA;
   numeroA = numeroB;
-  numeroB = contador;
+  numeroB = contador; // si B > A intercambio el primero por el segundo.
 }
-suma = 0;
 for (let contador: number = numeroA; contador <= numeroB; contador++) {
-  suma = suma + contador;
+  suma += contador;
 }
 console.log("La suma de todos los números es:", suma);
 //End
