@@ -15,10 +15,13 @@ se lo muestre
 Realizado por Dario Lopez - Comision A TDF - 04/05/2022
 */
 
+// infresa el dato del sueldo
 let sueldoActual: number = Number(prompt("Ingrese su suendo actual"));
+// variables de aumento del nuevo sueldo
 let aumento: number = 0;
-let nuevoSueldo: number = 0;
+// booleano de aumento (T/F)
 let aumentoGral: boolean = true;
+// pregunto si el sueldo esta dentro de maximo permitido.
 if (sueldoActual < 25001) {
   aumento = true;
 } else {
@@ -27,6 +30,7 @@ if (sueldoActual < 25001) {
 
 switch (aumento) {
   case true:
+    // aqui se aplica el 20 % de aumento si el sueldo es mayor a 0 y menor a 15000
     if (0 < sueldoActual && sueldoActual <= 15000) {
       console.log(
         "Su aumento es del 20 % su nuevo sueldo es de:" +
@@ -35,6 +39,7 @@ switch (aumento) {
           " " +
           "pesos"
       );
+      // en caso de que el sueldo esa mayor a 15001 y menor a 20000 aqui se aplica el 10 % de aumento.
     } else if (15001 < sueldoActual && sueldoActual <= 20000) {
       console.log(
         "Su aumento es del 10 % su nuevo sueldo es de:" +
@@ -43,6 +48,7 @@ switch (aumento) {
           " " +
           "pesos"
       );
+      // en caso de que el sueldo esa mayor a 20001 y menor a 25001 aqui se aplica el 5 % de aumento.
     } else if (20001 < sueldoActual && sueldoActual < 25001) {
       console.log(
         "Su aumento es del 5 % su nuevo sueldo es de:" +
@@ -54,6 +60,7 @@ switch (aumento) {
     }
 
     break;
+  // en caso de que el sueldo esa mayor a 25001 NO se aplica el aumento.
   case false:
     console.log(
       "Su sueldo es mayor a 25000 pesos. Usted no tiene aumento de sueldo"
