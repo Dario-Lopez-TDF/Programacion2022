@@ -59,8 +59,5 @@ switch (aumento) {
       "Su sueldo es mayor a 25000 pesos. Usted no tiene aumento de sueldo"
     );
     break;
-
-  default:
-    console.log("Su aumento esta en revision, debe contactar a RRHH");
-    break;
 }
+//End
