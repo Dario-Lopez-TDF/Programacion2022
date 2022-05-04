@@ -19,7 +19,7 @@ let sueldoActual: number = Number(prompt("Ingrese su suendo actual"));
 let aumento: number = 0;
 let nuevoSueldo: number = 0;
 let aumentoGral: boolean = true;
-if (sueldoActual < 25000) {
+if (sueldoActual < 25001) {
   aumento = true;
 } else {
   aumento = false;
@@ -43,7 +43,7 @@ switch (aumento) {
           " " +
           "pesos"
       );
-    } else if (20001 < sueldoActual && sueldoActual < 25000) {
+    } else if (20001 < sueldoActual && sueldoActual < 25001) {
       console.log(
         "Su aumento es del 5 % su nuevo sueldo es de:" +
           " " +
