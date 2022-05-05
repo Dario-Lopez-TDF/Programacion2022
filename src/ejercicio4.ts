@@ -15,7 +15,7 @@ se lo muestre
 Realizado por Dario Lopez - Comision A TDF - 04/05/2022
 */
 
-// infresa el dato del sueldo
+// ingresa el dato del sueldo
 let sueldoActual: number = Number(prompt("Ingrese su suendo actual"));
 // variables de aumento del nuevo sueldo
 let aumento: number = 0;
