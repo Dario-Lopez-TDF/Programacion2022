@@ -31,3 +31,28 @@ for (let indice: number = 1; indice <= 100; indice++) {
 console.log(cadena);
 
 */
+
+// Encontrar el numero Máximo
+
+// a) ingresar numeros hasta que se ingrese el 0
+
+let continuar: number = 1;
+let numero: number;
+let maxNum: number = -9999;
+let minNum: number = 9999;
+
+while(continuar !== 0){
+  numero = Number(prompt("ingrese numero"));
+  continuar =Number(prompt("continue"));
+// b) determina el numero maximo
+  if(numero > maxNum){ 
+    maxNum = numero;
+  }
+  // c) determina el numero minimo
+  if(numero < minNum){
+    minNum = numero;
+ }
+}
+console.log("maximo: " + maxNum);
+console.log("minimo: " + minNum);
+

@@ -24,9 +24,9 @@ un numero mayor y luego un menor */
 let suma: number = 0;
 
 if (numeroA > numeroB) {
-  contador = numeroA;
+  auxiliar = numeroA; // se agrega una variable auxiliar / intercambio de variables
   numeroA = numeroB;
-  numeroB = contador; // si B > A intercambio el primero por el segundo.
+  numeroB = auxiliar; // si B > A intercambio el primero por el segundo.
 }
 for (let contador: number = numeroA; contador <= numeroB; contador++) {
   suma += contador;
