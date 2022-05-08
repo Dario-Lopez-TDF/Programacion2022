@@ -41,18 +41,17 @@ let numero: number;
 let maxNum: number = -9999;
 let minNum: number = 9999;
 
-while(continuar !== 0){
+while (numero !== 0) {
   numero = Number(prompt("ingrese numero"));
-  continuar =Number(prompt("continue"));
-// b) determina el numero maximo
-  if(numero > maxNum){ 
+  continuar = Number(prompt("continue"));
+  // b) determina el numero maximo
+  if (numero > maxNum) {
     maxNum = numero;
   }
   // c) determina el numero minimo
-  if(numero < minNum){
+  if (numero < minNum) {
     minNum = numero;
- }
+  }
 }
-console.log("maximo: " + maxNum);
-console.log("minimo: " + minNum);
-
+console.log("valor maximo: " + maxNum);
+console.log("valor minimo: " + minNum);
