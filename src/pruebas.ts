@@ -30,7 +30,7 @@ for (let indice: number = 1; indice <= 100; indice++) {
 }
 console.log(cadena);
 
-*/
+
 
 // Encontrar el numero Máximo
 
@@ -55,3 +55,5 @@ while (numero !== 0) {
 }
 console.log("valor maximo: " + maxNum);
 console.log("valor minimo: " + minNum);
+
+*/

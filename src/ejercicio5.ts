@@ -14,7 +14,7 @@ let cantNumTotal: number = 0; // suma el total de los numeros ingresados
 let cantNumPositivos: number = 0; // suma el total de numeros > mayor a 0 = Positivos
 let porcentajeNumPositivos: number = 0; // calculo del porcentaje de numeros positivos
 
-let numero = Number(prompt("ingrese numero")); // Ingresar numeros por consola
+let numero = Number(prompt("ingrese numero (CERO para cortar)")); // Ingresar numeros por consola
 
 while (numero !== 0) {
   if (numero > 0) {
