@@ -6,15 +6,15 @@ Cantidad y Distribución de Positivos
 positivos como negativos
 • Contar la cantidad de valores introducidos que sean
 mayores a 0 y el porcentaje de positivos respecto del total
-*/
 
-// a) ingresar numeros hasta que se ingrese el 0
+Realizado por Dario Lopez - Comision A TDF - 09/05/2022
+*/
 
 let cantNumTotal: number = 0; // suma el total de los numeros ingresados
 let cantNumPositivos: number = 0; // suma el total de numeros > mayor a 0 = Positivos
 let porcentajeNumPositivos: number = 0; // calculo del porcentaje de numeros positivos
-//let minNum: number = 9999;
-let numero = Number(prompt("ingrese numero"));
+
+let numero = Number(prompt("ingrese numero")); // Ingresar numeros por consola
 
 while (numero !== 0) {
   if (numero > 0) {
@@ -22,16 +22,19 @@ while (numero !== 0) {
     cantNumPositivos++; // c) suma los numeros positivos
   }
   cantNumTotal++; // d) suma el total de numeros ingresados
-  // e) contunuar ingresado numeros distintos de "0" (cero)
+  // e) contunuar ingresado numeros numeros hasta que se ingrese el "0" (cero)
   numero = Number(prompt("ingrese numero"));
 }
+// f) cálculo del porcentaje de positivos respecto del total
 if (cantNumTotal > 0) {
   porcentajeNumPositivos = (cantNumPositivos / cantNumTotal) * 100;
 
   console.log(
+    "positivos:",
     cantNumPositivos,
-    "positivos",
+    "es el ",
     porcentajeNumPositivos,
     "% del total"
   );
 }
+// End
