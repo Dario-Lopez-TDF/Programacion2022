@@ -1,4 +1,39 @@
+// Clase Martes 10/05/22 practica con Brian
+//  MODULARIZACION - armado de funciones (repetidas o en modulos)
+
+function dibulinea() {
+  let linea: string = "-";
+  for (let i: number = 0; i <= 40; i++) {
+    linea = linea + "-";
+  }
+  console.log(linea);
+}
+
+let num1: number = Number(prompt("ingresar 1º numero"));
+let num2: number = Number(prompt("ingresar 2º numero"));
+let opcion: number = Number(
+  prompt("ingresar 1 para sumar, 2 para restar, otra tecla corta")
+);
+let resultado: number = 0;
+
+if (opcion === 1) {
+  resultado = num1 + num2;
+  dibulinea();
+  console.log("el resultado de la operación es:", resultado);
+  dibulinea();
+} else if (opcion === 2) {
+  resultado = num1 - num2;
+  dibulinea();
+  console.log("el resultado de la operación es:", resultado);
+  dibulinea();
+} else {
+  console.log("cuenta no valida");
+}
+// IMPORTANTE: Hacer con "switch case" y agragar division y multiplicacion.
+// TAREA ENTREGABLE CON SWITCH
+
 /*
+// LOGING
 let clave: String = prompt("su clave");
 let intentos: number = 0; //contador
 let continuar: String = "y";
