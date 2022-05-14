@@ -1,14 +1,82 @@
-// Clase Martes 10/05/22 practica con Brian
+// Clase Viernes 13/05/22 practica con Leandro
 //  MODULARIZACION - armado de funciones (repetidas o en modulos)
+/* Funciones con parametros
 
-function dibulinea() {
-  let linea: string = "-";
-  for (let i: number = 0; i <= 40; i++) {
+function dibuLinea(numero: number) {
+  let linea: string = "";
+  for (let i: number = 0; i < numero; i++) {
     linea = linea + "-";
   }
-  console.log(linea);
+  return linea;
+  //console.log(linea); es reemplazado por "return" y desligo el consolelog de la funcion.
 }
 
+for (let j: number = 1; j <= 10; j++) {
+  console.log(dibuLinea(j));
+}
+
+
+
+//////////////////////
+// 
+let num1: number = 1;
+let num2: number = 2;
+let operacion: number = 3;
+
+
+function operarNumeros(num1:number, num2:number, operacion): number{  
+if (operacion === 1) 
+  return num1 + num2;
+  return num1 - num2;
+}
+
+console.log(operarNumeros(num1, num2, operacion));
+
+//////// Area de un triangulo
+
+let base: number =1;
+let altura: number=2;
+let area: number;
+
+area = (base * altura) / 2; 
+
+
+function calcularAreaTriangulo(base:number, altura:number): number{
+   return (base * altura) / 2;
+}
+
+
+
+function calculoPotencia() {
+  //Función cálculo axuliar de potenciación.
+  if (numExponente === 0) {
+    resultado = 1;
+  } else {
+    resultado = numBase ** numExponente;
+  }
+  console.log(
+    "El resultado de:",
+    numBase,
+    "elevado a",
+    numExponente,
+    "es igual a:",
+    resultado
+  );
+}
+// Ingresar numeros por consola (numbase = Número Base y numExponente = Exponente o potencia)
+let numBase: number = Number(prompt("Ingrese numero base"));
+let numExponente: number = Number(prompt("Ingrese numero exponente"));
+let resultado: number = 0;
+
+if (numExponente >= 0) {
+  calculoPotencia(); // llamo a la función cálculo de potenciación.
+} else {
+  console.log("La operación es invalida o la potencia es erronea");
+}
+
+
+
+/*
 let num1: number = Number(prompt("ingresar 1º numero"));
 let num2: number = Number(prompt("ingresar 2º numero"));
 let opcion: number = Number(
@@ -66,7 +134,7 @@ for (let indice: number = 1; indice <= 100; indice++) {
 console.log(cadena);
 
 
-
+*/
 //Encontrar el numero Máximo
 
 // a) ingresar numeros hasta que se ingrese el 0
@@ -90,4 +158,3 @@ while (numero !== 0) {
 }
 console.log("valor maximo: " + maxNum);
 console.log("valor minimo: " + minNum);
-*/
