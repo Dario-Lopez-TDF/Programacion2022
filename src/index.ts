@@ -1,15 +1,13 @@
-/*
-let n1 = Number=prompt("Escribe un número");
+let n1 = (Number = prompt("Escribe un número"));
 let i;
 let contar: number = 0;
-for (i=0;i < n1; i++) {
-if (n1 % i === 0) {
-i++
-contar++
-console.log("cuenta", contar, "divisor", i);
+for (i = 0; i < n1; i++) {
+  if (n1 % i === 0) {
+    i++;
+    contar++;
+    console.log("cuenta", contar, "divisor", i);
+  }
 }
-}
-*/
 
 let numero = prompt("Escribe un número");
 let i;

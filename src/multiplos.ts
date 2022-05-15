@@ -1,4 +1,4 @@
-/*function esMultiplo(dividendo: number, divisor: number): boolean {
+function esMultiplo(dividendo: number, divisor: number): boolean {
   if (dividendo % divisor === 0) {
     return true;
   } else {
