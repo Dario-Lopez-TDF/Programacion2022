@@ -1,3 +1,15 @@
+// contador de divisores con while..
+
+let numero: number = Number(prompt("Numero"));
+let i: number = 1;
+
+while (i <= numero) {
+  if (numero % i === 0) {
+    console.log(i);
+  }
+  i++;
+}
+
 // Clase Viernes 13/05/22 practica con Leandro
 //  MODULARIZACION - armado de funciones (repetidas o en modulos)
 /* Funciones con parametros
@@ -134,7 +146,7 @@ for (let indice: number = 1; indice <= 100; indice++) {
 console.log(cadena);
 
 
-*/
+
 //Encontrar el numero Máximo
 
 // a) ingresar numeros hasta que se ingrese el 0
@@ -158,3 +170,4 @@ while (numero !== 0) {
 }
 console.log("valor maximo: " + maxNum);
 console.log("valor minimo: " + minNum);
+*/
