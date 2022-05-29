@@ -1,9 +1,8 @@
-let n1 = (Number = prompt("Escribe un número"));
-let i;
+let n1: number = (Number = prompt("Escribe un número"));
+let i: number;
 let contar: number = 0;
-for (i = 0; i < n1; i++) {
+for (i = 0; i <= n1; i++) {
   if (n1 % i === 0) {
-    i++;
     contar++;
     console.log("cuenta", contar, "divisor", i);
   }
@@ -19,7 +18,7 @@ for (i = 0; i <= numero; i++) {
     // totalDivisores = ;
 
     //console.log(numeros," lo divide ");
-    console.log("iteración ->", contarDivisores, "divisor ->", i);
+    console.log("iteración", contarDivisores, "divisor =", i);
   }
 }
-//console.log("total", totalDivisores);
+console.log("total", contarDivisores);
