@@ -1,4 +1,5 @@
-/*TP Introducción a la Programación – COMISIÓN A TDF
+/*Trabajo Practico Introducción a la Programación – COMISIÓN A TDF
+
 Hacer un programa que simule la compra que hace un cliente en un
 supermercado. El cliente va tener que ingresar por teclado la
 CANTIDAD de productos que va a llevar, los PRODUCTOS que va
@@ -13,6 +14,8 @@ Dependiendo del monto comprado, el cliente participa de un sorteo:
 • si compra mas de 2000 pero menos de 3000 participa por una
 moto 0k
 • si compra mas de 1000 pero menos de 2000 participa un tv led
+
+Realizado por Dario Lopez - Comision A TDF - 20/06/2022
 */
 
 // funcion de carga de la lista de artículos a comprar por el cliente
@@ -60,6 +63,24 @@ function obtenerPrecioTotal(
   return precioTotal;
 }
 
+// funcion para mostrar el detalle de la compra, es decir el Ticket
+function mostrarTicket(): void {
+  console.log("El detalle de la compra es:");
+  for (let i: number = 0; i < cantidadDeArticulos; i++) {
+    console.log(
+      cantAComprar[i] +
+        " unidades de " +
+        " " +
+        listaArticulos[i] +
+        ", precio unitario de $" +
+        precioArticulos[i] +
+        " = $" +
+        cantAComprar[i] * precioArticulos[i]
+    );
+  }
+}
+
+//declaro las variables y los arreglos
 let cantidadDeArticulos: number = Number(
   prompt("ingrese la cantidad de artículos:")
 );
@@ -68,6 +89,41 @@ let precioArticulos: number[] = new Array(cantidadDeArticulos);
 let cantAComprar: number[] = new Array(cantidadDeArticulos);
 let precioTotal: number = 0;
 
+// llamo a las funciones
 cargarArticulos(listaArticulos);
 cargarPrecioArticulos(precioArticulos);
 cargarCantidadDeArticulos(cantAComprar);
+precioTotal = obtenerPrecioTotal(precioArticulos, cantAComprar);
+
+// consicionales para determinar el detalle de la compra, el valor total de la compra
+// y si participa de algunos de los sorteos.
+if (precioTotal < 1000) {
+  mostrarTicket();
+  console.log(
+    "El valor de la compra es: " +
+      precioTotal +
+      " gracias, por su compra, vuelva pronto"
+  );
+} else if (precioTotal > 3000) {
+  mostrarTicket();
+  console.log(
+    "El valor de la compra es: " +
+      precioTotal +
+      " felicitaciones!!, esta praticipando por el sorteo de un auto Okm"
+  );
+} else if (precioTotal > 2000) {
+  mostrarTicket();
+  console.log(
+    "El valor de la compra es: " +
+      precioTotal +
+      " felicitaciones!!, esta praticipando por el sorteo de una moto Okm"
+  );
+} else if (precioTotal > 1000) {
+  mostrarTicket();
+  console.log(
+    "El valor de la compra es: " +
+      precioTotal +
+      ' felicitaciones!!, esta praticipando por el sorteo de una TV led 42"'
+  );
+}
+// End.
